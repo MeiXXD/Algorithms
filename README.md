@@ -9,3 +9,5 @@
 5.斐波那契数列 https://github.com/MeiXXD/Algorithms/blob/master/Fibonacci
 
 6.二进制中1的个数 https://github.com/MeiXXD/Algorithms/blob/master/NumsOfOne
+
+7.2n+1个数中不成对的那个 https://github.com/MeiXXD/Algorithms/blob/master/SingleNumber
