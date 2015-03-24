@@ -7,3 +7,5 @@
 4.旋转数组中的最小数字 https://github.com/MeiXXD/Algorithms/blob/master/RotatedArray
 
 5.斐波那契数列 https://github.com/MeiXXD/Algorithms/blob/master/Fibonacci
+
+6.二进制中1的个数 https://github.com/MeiXXD/Algorithms/blob/master/NumsOfOne
