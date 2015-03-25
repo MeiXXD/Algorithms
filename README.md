@@ -11,3 +11,5 @@
 6.二进制中1的个数 https://github.com/MeiXXD/Algorithms/blob/master/NumsOfOne
 
 7.2n+1个数中不成对的那个 https://github.com/MeiXXD/Algorithms/blob/master/SingleNumber
+
+8.在o(1)时间删除链表结点 https://github.com/MeiXXD/Algorithms/blob/master/DeleteNode
