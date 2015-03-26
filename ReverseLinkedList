@@ -45,4 +45,28 @@ class Node {
 		}
 		System.out.print(head.value + " ");
 	}
+	
+	/**
+	 * @Title: ResverseLinkedList
+	 * @Description: 反转链表，并返回链表头
+	 * @param head
+	 * @return
+	 * @return: Node
+	 */
+	public static Node ResverseLinkedList(Node head) {
+		Node resversedHeadNode = null;
+		Node pre = null;
+		Node node = head;
+		Node next = null;
+		while (node != null) {
+			next = node.next;
+			if (next == null) {
+				resversedHeadNode = node;
+			}
+			node.next = pre;
+			pre = node;
+			node = next;
+		}
+		return resversedHeadNode;
+	}
 }
