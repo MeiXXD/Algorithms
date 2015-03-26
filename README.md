@@ -13,3 +13,5 @@
 7.2n+1个数中不成对的那个 https://github.com/MeiXXD/Algorithms/blob/master/SingleNumber
 
 8.在o(1)时间删除链表结点 https://github.com/MeiXXD/Algorithms/blob/master/DeleteNode
+
+9.二叉树的子机构 https://github.com/MeiXXD/Algorithms/blob/master/SubTree
