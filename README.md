@@ -21,3 +21,5 @@
 11.二叉树的镜像树 https://github.com/MeiXXD/Algorithms/blob/master/MirrorTree
 
 12.顺时针打印矩阵 https://github.com/MeiXXD/Algorithms/blob/master/Matrix
+
+13.n个数中选m个不同的数 https://github.com/MeiXXD/Algorithms/blob/master/NumComb
