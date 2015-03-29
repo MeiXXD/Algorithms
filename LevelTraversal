@@ -1,0 +1,40 @@
+/**
+ * @ClassName: BinaryTree
+ * @Description: 二叉树的层次遍历
+ * @author: MeiXXD
+ */
+public class BinaryTree {
+	int value;
+	BinaryTree lChild;
+	BinaryTree rChild;
+
+	public BinaryTree(int value) {
+		this.value = value;
+		lChild = null;
+		rChild = null;
+	}
+
+	/**
+	 * @Title: PrintFromTopTOBottom
+	 * @Description: 使用队列层次遍历二叉树
+	 * @param root
+	 * @return: void
+	 */
+	public static void PrintFromTopTOBottom(BinaryTree root) {
+		if (root == null) {
+			return;
+		}
+		LinkedList<BinaryTree> binaryTrees = new LinkedList<BinaryTree>();
+		binaryTrees.add(root);
+		while (!binaryTrees.isEmpty()) {
+			BinaryTree temp = binaryTrees.removeFirst();
+			System.out.print(temp.value + " ");
+			if (temp.lChild != null) {
+				binaryTrees.add(temp.lChild);
+			}
+			if (temp.rChild != null) {
+				binaryTrees.add(temp.rChild);
+			}
+		}
+	}
+}
