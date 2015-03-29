@@ -23,3 +23,7 @@
 12.顺时针打印矩阵 https://github.com/MeiXXD/Algorithms/blob/master/Matrix
 
 13.n个数中选m个不同的数 https://github.com/MeiXXD/Algorithms/blob/master/NumComb
+
+14.二叉树的层次遍历 https://github.com/MeiXXD/Algorithms/blob/master/LevelTraversal
+
+15.根据后序遍历结果判断是否为二叉搜索树 https://github.com/MeiXXD/Algorithms/blob/master/IsBST
