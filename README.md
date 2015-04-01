@@ -34,4 +34,4 @@
 
 18.二叉树中和为某一值的路径 https://github.com/MeiXXD/Algorithms/blob/master/getPath
 
-19.两个结点的最低公共祖先（优化） https://github.com/MeiXXD/Algorithms/blob/master/getFirstFather（优化）
+19.最低公共祖先（优化） https://github.com/MeiXXD/Algorithms/blob/master/getFirstFather（优化）
