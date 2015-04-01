@@ -30,6 +30,6 @@
 
 16.数组只出现一次的两个数 https://github.com/MeiXXD/Algorithms/blob/master/FindNumAppearOnce
 
-17.得到两个结点的最低公共祖先 https://github.com/MeiXXD/Algorithms/blob/master/findFirstFatherNode
+17.两个结点的最低公共祖先 https://github.com/MeiXXD/Algorithms/blob/master/findFirstFatherNode
 
 18.二叉树中和为某一值的路径 https://github.com/MeiXXD/Algorithms/blob/master/getPath
