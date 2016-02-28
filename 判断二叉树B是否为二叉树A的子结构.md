@@ -1,3 +1,11 @@
+>题目：判断二叉树B是否为二叉树A的子结构
+
+###分析
+老生常谈了，二叉树问题，记住要巧用递归。A树中，如果根结点与B树的根结点相同，那么分别比较根结点的左右子树是否相同。如果左右子树有不同，那么就继续在A的左右子树中查找B树。直到找到或者查找完整个A树。
+
+代码如下：
+
+```java
 /**
  * @ClassName: SubTree
  * @Description: 判断二叉树B是否为二叉树A的子结构
@@ -7,17 +15,19 @@ public class SubTree {
 	/**
 	 * @Title: HasSubTree
 	 * @Description: 先找根节点是否相等，如不相等，则去左右子树中寻找（递归）
-	 * @param root1
-	 * @param root2
+	 * @param root1为A树的根结点
+	 * @param root2为B树的根结点
 	 * @return
 	 * @return: boolean
 	 */
-	public static boolean HasSubTree(Tree root1, Tree root2) {
+	public boolean HasSubTree(Tree root1, Tree root2) {
 		boolean result = false;
 		if (root1 != null && root2 != null) {
 			if (root1.value == root2.value) {
+			    // 根结点相同，做进一步比较。
 				result = DoesTree1HasTree2(root1, root2);
 			}
+			// 左右子树中继续查找
 			if (!result) {
 				result = HasSubTree(root1.lChild, root2);
 			}
@@ -30,13 +40,13 @@ public class SubTree {
 
 	/**
 	 * @Title: DoesTree1HasTree2
-	 * @Description: 根节点相等，则比较左右孩子结点（递归）
+	 * @Description: 根节点相等，则比较左右子树（递归）
 	 * @param root1
 	 * @param root2
 	 * @return
 	 * @return: boolean
 	 */
-	public static boolean DoesTree1HasTree2(Tree root1, Tree root2) {
+	public boolean DoesTree1HasTree2(Tree root1, Tree root2) {
 		if (root2 == null) {
 			return true;
 		}
@@ -46,32 +56,8 @@ public class SubTree {
 		if (root1.value != root2.value) {
 			return false;
 		}
-		return DoesTree1HasTree2(root1.lChild, root2.lChild)
-				&& DoesTree1HasTree2(root1.rChild, root2.rChild);
-	}
-
-	public static void main(String args[]) {
-		Tree root1 = new Tree(8);
-		Tree node11 = new Tree(8);
-		Tree node12 = new Tree(7);
-		Tree node13 = new Tree(9);
-		Tree node14 = new Tree(2);
-		Tree node15 = new Tree(4);
-		Tree node16 = new Tree(7);
-		root1.lChild = node11;
-		root1.rChild = node12;
-		node11.lChild = node13;
-		node11.rChild = node14;
-		node14.lChild = node15;
-		node14.rChild = node16;
-
-		Tree root2 = new Tree(8);
-		Tree node21 = new Tree(9);
-		Tree node22 = new Tree(2);
-		root2.lChild = node21;
-		root2.rChild = node22;
-
-		System.out.println(HasSubTree(root1, root2));
+		// Tree1左子树中包含Tree2的左子树，Tree2右子树中包含Tree2的右子树，才是Tree1包含Tree2
+		return DoesTree1HasTree2(root1.lChild, root2.lChild)&& DoesTree1HasTree2(root1.rChild, root2.rChild);
 	}
 }
 
@@ -86,3 +72,4 @@ class Tree {
 		rChild = null;
 	}
 }
+```
